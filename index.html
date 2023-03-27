@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Yellow Therapist</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="images/logo.png"
+          alt="Yellow Therapist logo"
+          class="nav__logo"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">FAQ</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Open account</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="header__title">
+            <h4 class="slider__header">TYT for students</h4>
+            <h1>Get up to 50% OFF</h1>
+            <blockquote class="slider__text">
+              Are you a member of our partner student club?
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="header__title">
+            <h4 class="slider__header">TYT for Everyone</h4>
+            <h1>Get up to 20% OFF</h1>
+            <blockquote class="slider__text">
+              Book you first session with us
+            </blockquote>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">What are you looking for?</h2>
+        <h3 class="section__header">
+          Everything you need, we've got you covered.
+        </h3>
+        <button class="section__btn btn">I need a therapist</button>
+        <button class="section__btn btn">I am a therapist</button>
+      </div>
+
+      <div class="features">
+        <img src="images/brg.jpg" alt="A brodge" class="features__img" />
+
+        <div class="features__feature">
+          <h5 class="features__header">A bridge between...</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+            sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+            debitis ducimus.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <h5 class="features__header">those who need help...</h5>
+          <p>
+            Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+            inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+            quibusdam!
+          </p>
+        </div>
+        <img src="images/laptop.png" alt="Laptop" class="features__img" />
+
+        <img
+          src="images/therapy.jpg"
+          alt="therapy session"
+          class="features__img"
+        />
+        <div class="features__feature">
+          <h5 class="features__header">and those who can provide.</h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">About TYT</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+          sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+          debitis ducimus.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title">
+        <h2 class="section__description">Questions asked</h2>
+
+        <ul>
+          <li>what is this?</li>
+          <li>Can I trust you?</li>
+          <li>Why do I need a therapist?</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#section--2">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://theyellowtherapist.com/"
+          >The Yellow Therapist </a
+        >| All rights reserved
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
